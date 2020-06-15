@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sandhaan'20</title>
+	<meta name="description"
+	content="SANDHAAN, the annual techno management festival of BIT Sindri. Ever since its inception SANDHAAN has endeavored to live and promote innovation and technical prowess. Over last ten years, it has been a platform for young technocrats of India to showcase and sharpen their skills and prove their talents." />
+	<meta name="keywords" content="model club, BIT SINDRI" />
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	
+	<link href="index.css" rel="stylesheet">
+	<link href="slider.css" rel="stylesheet">
+	<link href="contacts.css" rel="stylesheet">
+	<link href="loading.css" rel="stylesheet">
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="../../daneden.github.io/animate.css/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	
+
+
+
+	
+	
+	 <!--for countdown-->
+   <link rel="stylesheet" href="css/countdown.css" type="text/css" media="all" />
+   <link href="css/font-awesome.css" rel="stylesheet">
+   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   
+   
+    <!--database--> 
+   
+   <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+
+   
+   <!--database-->
+  
+ 
+</head>
+
+<body>
+	<div class="loading">
+		<img style="width: 50%; height: auto;"src="img/modelclubnew.png" />
+	</div>
+	
+	<main>
+	<div class="icon-bar">
+  <a href="https://www.facebook.com/sandhaan.bit/" class="facebook" target="_blank"><i class="fab fa-facebook"></i></a> 
+  <a href="https://instagram.com/modelclubbit?igshid=osuubs57bnm0" target="_blank" class="instagram"><i class="fab fa-instagram"></i></i></a> 
+  <a href="https://www.linkedin.com/company/modelclubbitsindri" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a> 
+  <a href="https://www.youtube.com/channel/UC6T8EWpW1HBGSLL7_UyjHhw" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a> 
+</div>
+		<div class="frame">
+			<header class="header">
+				<!-- <div class="model">
+        <a href="../index.html"><img style="width: 15vw; max-width: 100px; margin: 1rem;" src="../about/photos/logo.png"></img></a>
+        </div>-->
+				
+				<div class="menu-btn">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			<img src="img/bit.png" alt="Nature" class="logobit">
+		<img src="img/modelclubnew.png" alt="Nature" class="logo">
+			</header>
+			<nav class="nav" id="mynav" style="display: flex;">
+      
+     
+     
+       <a style="display: flex;" href="events/index.html">Segments</a>
+      <a style="display: flex;" href="gallery/index.html">Archives</a>
+       
+      <a style="display: flex;" href="CA/index.html">Campus Ambassador</a>
+	  <a style="display: flex;" href="sponsors/index.html">Sponsors</a>
+	  <a style="display: flex;" href="contact/index.html">Our Team</a>
+	  <a style="display: flex;" id="login" href="signin/index.html">LogIN</a>
+	  <a style="display: flex;" id="logout" onclick="logout()" >LogOut</a>
+	 
+	 
+    </nav>
+			
+		</div>
+		
+		<!--menu bar-->
+		
+		
+		
+		<!--end menu bar-->
+		<div class="sec-title centered">
+						<div id="modelclub" class="" style="font-family: 'Poppins', sans-serif;"></div>
+						<div class="title second" id="techfest" >THE ANNUAL TECHNO-MANAGEMENT FEST</div>
+					</div>
+		
+		<img src="img/sandhaan20.png" alt="Nature" class="responsive">
+		
+		<div class="coming-61-w3l-vv-info">
+		
+		
+						<h1 style="color: f5f5f5; font-family: 'Poppins', sans-serif;">We Are Arriving Soon</h1>
+
+						<ul class="counter-inner">
+							<li><span id="days"></span>days</li>
+							<li><span id="hours"></span>Hours</li>
+							<li><span id="minutes"></span>Minutes</li>
+							<li><span id="seconds"></span>Seconds</li>
+						</ul>
+				<div class="wrapper">
+				<a class="a-link" style="align: centre;" href="register/index.html"><span>REGISTER</span></a>
+			</div> 
+
+
+	</div>
+	
+	
+		
+		<!--CONTACT SECTION-->
+		<section class="card-wrapper ">
+			<section class="team-page-section">
+			
+							<div class="container">
+					<!-- Sec Title -->
+					<div class="sec-title centered">
+						<div  class="title" style="font-family: 'Poppins', sans-serif;">About Sandhaan</div>
+						<div class="separator"><span></span></div>
+					</div>
+					
+					<div class="row clearfix">
+						
+						
+							<!-- Team Block -->
+						<!--	<div class="team-block">
+								<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+									
+									<div class="lower-content">
+									
+										<img class="team" style="opacity: 1; width: inherit; height: inherit; object-fit: fill;" src="../img/post/tridev.jpg">
+										<h3 class="name-title info"><a href="https://www.linkedin.com/in/tridev-singh-choudhary-b85020166/">Tridev Singh Choudhary
+											</a></h3>
+											<div class="designation info">Chemical Engineering, 2k17<br>9304340477</div>
+										
+									</div>
+								</div>
+							</div>-->
+								
+								
+								<!-- Team Block -->
+						<!--	<div class="team-block">
+								<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+									
+									<div class="lower-content">
+									
+										<h1> SANDHAAN, the annual techno management festival of BIT Sindri. Ever since its inception SANDHAAN has endeavored to live and promote innovation and technical prowess. Over last ten years, it has been a platform for young technocrats of India to showcase and sharpen their skills and prove their talents.<br><br> The festival comprises of a number of events from technical, entrepreneurial and management field, including workshops, guest lectures from eminent personalities alongside several social outreach initiatives. With a view of rising global problems and challenges in the direction of life sustainability and providing effective solutions to the issues, the two day long mega tech fest emphasizes on improving the technicalities of the young minds and catapult their potential, which can prove to be an asset to the nation. SANDHAAN targets the technical nerves of the participants. It witnessed participation from over 30 colleges and 100 schools and a footfall of over 8000 students.
+											</h1>
+											
+											
+										
+									</div>
+								</div>
+							</div>-->
+							
+							<!-- Team Block -->
+							<div class="">
+								<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+									
+									<div class="lower-content" style="align: left;">
+									
+										<h3 style="font-weight: normal;  text-align: justify;
+  text-justify: inter-word; font-family: 'Poppins', sans-serif;"> SANDHAAN, the annual techno management festival of BIT Sindri. Ever since its inception SANDHAAN has endeavored to live and promote innovation and technical prowess. Over last ten years, it has been a platform for young technocrats of India to showcase and sharpen their skills and prove their talents.<br><br> The festival comprises of a number of events from technical, entrepreneurial and management field, including workshops, guest lectures from eminent personalities alongside several social outreach initiatives. With a view of rising global problems and challenges in the direction of life sustainability and providing effective solutions to the issues, the two day long mega tech fest emphasizes on improving the technicalities of the young minds and catapult their potential, which can prove to be an asset to the nation. SANDHAAN targets the technical nerves of the participants. It witnessed participation from over 30 colleges and 100 schools and a footfall of over 8000 students.
+											</h3>
+											
+											
+										
+									</div>
+								</div>
+							</div>
+							
+							
+								
+							</div>
+						</div>
+			
+			<div class="row clearfix">
+						
+						<!--	<!-- Team Block -->
+							<div class="team-block">
+								<div class=" wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+									
+									<div class="lower-content">
+									
+										<iframe src="https://www.youtube.com/embed/wnyqE8A53Ak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											
+										
+									</div>
+								</div>
+							</div>
+							<!--	<!-- Team Block -->
+							<div class="team-block">
+								<div class=" wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+									
+									<div class="lower-content">
+									
+										<iframe src="https://www.youtube.com/embed/jTV3IZACYq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</iframe>
+											
+										
+									</div>
+								</div>
+							</div>
+							
+							<!--	<!-- Team Block -->
+							<div class="team-block">
+								<div class=" wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+									
+									<div class="lower-content">
+									
+										<iframe src="https://www.youtube.com/embed/OOnV5tBw_dI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</iframe>
+											
+										
+									</div>
+								</div>
+							</div>
+							
+														
+							</div>
+						</div>
+			
+			<!--social icons-->
+	
+<!--	<div class="footer-social-icons">
+    <h4 class="_14">Follow us on</h4>
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        
+    </ul>
+</div>-->
+	
+	<!--end social icons-->
+				<!--patronage section-->
+				
+			
+				<!--end patronage section>
+						
+			<!-- /cards -->
+			
+			
+<br>
+			<div class="contact-card">
+			
+			
+	
+	<div class="footer-social-icons">
+	
+				
+				
+  <div class="column-center"><div class="footer-single">
+  <div class="copyright" style="text-align: left; margin-left: 80px;">&copy; MODEL CLUB, BIT SINDRI</div>
+  <div id="myname"  style="text-align: left;   font-family: 400 130px/0.8 'Cookie', Helvetica, sans-serif; text-shadow: 4px 4px 3px rgba(0,0,0,0.1); ">Made With &nbsp;<i style="color:red;" class="fas fa-heart" aria-hidden="true"></i>&nbsp;by&nbsp;<a style="text-decoration: underline; font-family: 400 130px/0.8 'Cookie', Helvetica, sans-serif; text-shadow: 4px 4px 3px rgba(0,0,0,0.1);" target="_blank" href="https://www.linkedin.com/in/swati-jha-97586714b/" >CREATIVE HEAD</a></div> 
+  
+  
+						
+						
+						<a href="https://goo.gl/maps/jQS3q6WifdaEeDtT8">	<i class="fas fa-map-marked-alt" style="font-size: 30px; margin-left: 142px;">&nbsp;</i> </a><br>
+							<!--<img src="img/footer-logo.png" alt="">-->
+							<a style="text-align: left;" href="mailto:teamsandhaan20@gmail.com">	<i class="fa fa-envelope fa-lg" style="color: white; margin-left: 0; font-size: 6%;" >&nbsp;teamsandhaan20@gmail.com</i> </a><br><div class="copyright" style="text-align: left; margin-left: 80px;"> powered by <a style="color: #FCFF33;" target="_blank" href="https://www.milesweb.in">Milesweb</a></div>
+					<!--social links-->	
+				<!--	<h4 class="_14">Follow us on</h4>
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/sandhaan.bit/" class="social-icon"> <i class="fas fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/modelclubbit?igshid=osuubs57bnm0" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        
+        <li><a href="https://www.youtube.com/channel/UC6T8EWpW1HBGSLL7_UyjHhw" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/modelclubbitsindri" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        
+    </ul>-->
+	<!--end social links-->	
+	<br>
+						</div></div>
+						
+  
+	
+  
+
+				
+				
+				
+				
+					
+				</div>
+					
+				
+				
+				
+
+			</div>
+				
+				</section>
+			</section>
+			
+			
+		</main>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="vendors.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="anime.min.js"></script>
+		<script src="js/main.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<script>
+		
+		
+		//login
+		firebase.auth().onAuthStateChanged(function(user){
+		if(user){
+		
+			document.getElementById("login").style.display="none";
+			document.getElementById("logout").style.display="block";
+			
+			
+			
+			
+		    
+		}
+		else{
+			document.getElementById("logout").style.display="none";
+			document.getElementById("login").style.display="block";
+		}
+		
+		});
+		
+		
+		//end login
+		
+		//coming soon alert
+		function coming(){
+		
+		alert('COMING SOON');
+		
+		}
+		//end coming soon alert
+		
+		
+		
+		var i = 0;
+		var j=0;
+					var txt = 'MODEL CLUB, BIT SINDRI presents';
+					var speed = 50;
+					var fest= 'THE ANNUAL TECHNO-MANAGEMENT FEST';
+					
+			window.onload = function() {
+				setTimeout( function() {
+					document.querySelector(".loading").style.opacity = 0;
+				}, 800)
+				setTimeout( function() {
+					document.querySelector(".loading").style.display = "none";
+				}, 1300)
+				
+					//typwriter effect
+					setInterval( function() {
+					
+					if (i < txt.length) {
+						
+						if(i==0){
+						document.getElementById("modelclub").innerHTML = txt.charAt(i);
+						}
+						else{
+						document.getElementById("modelclub").innerHTML += txt.charAt(i);
+						}
+						i++;
+						
+					  }
+					  else{
+					  i=0;
+					  //document.getElementById("modelclub").innerHTML="";
+					  }
+					}, 200)
+				
+				
+
+					//end typewriter effect
+
+			}
+			//for menu
+			
+			
+			
+			//end menu
+			
+			//FOR COUNTDOWN
+			const second = 1000,
+				minute = second * 60,
+				hour = minute * 60,
+				day = hour * 24;
+
+			let countDown = new Date('April 12, 2020 00:00:00').getTime(),
+				x = setInterval(function () {
+
+					let now = new Date().getTime(),
+						distance = countDown - now;
+
+					document.getElementById('days').innerText = Math.floor(distance / (day)),
+						document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+						document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+						document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+					//do something later when date is reached
+					//if (distance < 0) {
+					//  clearInterval(x);
+					//  'IT'S MY BIRTHDAY!;
+					//}
+
+				}, second)
+			
+			// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+
+
+
+		</script>
+		
+	</body>
+	
+	
+<!-- Mirrored from tathva.org/contact/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Oct 2019 18:13:46 GMT -->
+</html>

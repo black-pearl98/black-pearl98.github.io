@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<meta name="description"
+	content="SANDHAAN, the annual techno management festival of BIT Sindri. Ever since its inception SANDHAAN has endeavored to live and promote innovation and technical prowess. Over last ten years, it has been a platform for young technocrats of India to showcase and sharpen their skills and prove their talents." />
+	<meta name="keywords" content="model club, BIT SINDRI" />
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+	
+	<link href="index.css" rel="stylesheet">
+	<link href="slider.css" rel="stylesheet">
+	<link href="contacts.css" rel="stylesheet">
+	<link href="loading.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="../../daneden.github.io/animate.css/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+	<link href="css/font-awesome.css" rel="stylesheet">
+	
+  <!-- css -->
+<link href="css/style.css" rel="stylesheet" type='text/css' media="all" />
+<!-- /css -->
+<!-- js --> 
+	<script src="js/jquery-2.2.3.min.js"></script>
+	
+	 <!--database--> 
+   
+   <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+
+   
+   <!--database-->
+</head>
+
+<body>
+	<div class="loading">
+		<img src="../img/modelclubnew.png" />
+	</div>
+	<main>
+		<div class="frame">
+			<header class="header">
+				<!-- <div class="model">
+        <a href="../index.html"><img style="width: 15vw; max-width: 100px; margin: 1rem;" src="../about/photos/logo.png"></img></a>
+        </div>-->
+				
+				<div class="menu-btn">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			<img src="../img/bit.png" alt="Nature" class="logobit">
+		<img src="../img/modelclubnew.png" alt="Nature" class="logo">
+			</header>
+			<nav class="nav" id="mynav" style="display: flex;">
+      
+     <a style="display: flex;" href="../index.html">Home</a>
+      
+       <a style="display: flex;" href="../events/index.html">Segments</a>
+      <a style="display: flex;" href="../gallery/index.html">Archives</a>
+      
+      
+	  <a style="display: flex;" href="../sponsors/index.html">Sponsors</a>
+	  <a style="display: flex;" href="../contact/index.html">Our Team</a>
+	 
+    </nav>
+			
+		</div>
+		
+		
+		<!--CONTACT SECTION-->
+		<div class="content-w3ls">
+	<div class="content1-agile">
+		<div class="form_w3layouts" style="background-color: #55555538;">
+			<form  method="post" class="agile_form">
+				<div class="agileits-left">
+					<input type="text" name="name" id="name" class="username" placeholder="Name" required="">
+				</div>
+				<div class="agileits-left s2-w3ls">
+					<input type="text" name="branch" id="branch" class="username" placeholder="Branch" required="">
+				</div>	
+				<div class="clear"></div>
+				<div class="checkin agileits-left">
+				   <input type="text" name="roll" class="username" id="roll" placeholder="Roll No." required="">
+				</div>
+				<div class="agileits-left s2-w3ls">
+					<input type="text" name="mobile" class="username" id="mobile" placeholder="Mobile no." required="">
+				</div>
+				<div class="clear"></div>
+				<div class="agileits-left">
+					<input type="text" name="hostel" class="username" id="hostel" placeholder="Hostel" required="">
+				</div>
+				<div class="agileits-left s2-w3ls">
+					<input type="email" name="email" class="username" id="email" placeholder="Email" required="">
+				</div>	
+				<div class="clear"></div>
+				<!--<div class="section_class_agileits">
+					<select required>
+						<option value="">Choice of Instrument</option>
+						<option value="2">Guitar</option>
+						<option value="3">Violin</option>
+						<option value="4">Drums</option>
+						<option value="5">Saxophone</option>
+						<option value="5">piano</option>
+					</select>
+				</div>	-->
+			<!--	<div class="section_class_agileits s2-w3ls">
+					<select required="">
+						<option value="">Select Time</option>
+						<option value="1">10:00-11:00</option>
+						<option value="2">11:00-12:00</option>
+						<option value="3">14:00-15:00</option>
+						<option value="4">15:00-16:00</option>
+						<option value="4">16:30-17:00</option>
+						<option value="4">17:30-18:30</option>
+					 </select>
+				</div>	 -->
+				<div class="clear"></div>
+				<div class="agileits-left check">
+					<h2>Register for Events</h2>
+					<label class="checkbox w3l"><input type="checkbox" name="engineer" id="engineer" required="required"><i></i>Mr/Ms. Engineer</label>
+					<label class="checkbox w3l"><input type="checkbox" name="toy" id="toy" required="required"><i> </i>TOY</label>
+					<label class="checkbox w3l"><input type="checkbox" name="deadoralive" id="deadoralive" required="required"><i> </i>DEAD OR ALIVE</label>
+					<label class="checkbox w3l"><input type="checkbox" name="carrombot" id="carrombot" required="required"><i> </i>CORROM BOT</label>
+					<label class="checkbox w3l"><input type="checkbox" name="kurukshetra" id="kurukshetra" required="required"><i> </i>KURUKSHETRA</label>
+					<label class="checkbox w3l"><input type="checkbox" name="roboseguidor" id="roboseguidor" required="required"><i> </i>ROBO SEGUIDOR</label>
+					<label class="checkbox w3l"><input type="checkbox" name="mazecorredor" id="mazecorredor" required="required"><i> </i>MAZE CORREDOR</label>
+					<label class="checkbox w3l"><input type="checkbox" name="expositio" id="expositio" required="required"><i> </i>EXPOSITIO</label>
+					<label class="checkbox w3l"><input type="checkbox" name="ceo" id="ceo" required="required"><i> </i>CEO</label>
+					<label class="checkbox w3l"><input type="checkbox" name="scientica" id="scientica" required="required"><i> </i>SCIENTICA</label>
+					<label class="checkbox w3l"><input type="checkbox" name="modex" id="modex" required="required"><i> </i>MODEX</label>
+					<label class="checkbox w3l"><input type="checkbox" name="bikeassembling" id="bikeassembling" required="required"><i> </i>BIKE ASSEMBLING</label>
+					<label class="checkbox w3l"><input type="checkbox" name="davincicode" id="davincicode" required="required"><i> </i>DA VINCI CODE</label>
+					<label class="checkbox w3l"><input type="checkbox" name="t2b" id="t2b" required="required"><i> </i>T2B</label>
+					<label class="checkbox w3l"><input type="checkbox" name="aavishkar" id="aavishkar" required="required"><i> </i>AAVISHKAR</label>
+					<label class="checkbox w3l"><input type="checkbox" name="hydro" id="hydro" required="required"><i> </i>HYDROFLIGHT</label>
+					<label class="checkbox w3l"><input type="checkbox" name="matlab" id="matlab" required="required"><i> </i>MATLAB</label>
+					<label class="checkbox w3l"><input type="checkbox" name="shoot" id="shoot" required="required"><i> </i>SHOOT AT SIGHT</label>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="agileits-left check">
+					<input type="button" id="btn-update"  value="Register">
+				</div> 
+				
+			</form>	
+	</div>
+	</div>
+						
+			<!-- /cards -->
+			<div class="contact-card">
+			
+			
+	
+	<div class="footer-social-icons">
+	
+				
+				
+  <div class="column-center"><div class="footer-single">
+  <div class="copyright" style="text-align: left; margin-left: 80px;">&copy; MODEL CLUB, BIT SINDRI</div>
+  <div id="myname"  style="text-align: left;   font-family: 400 130px/0.8 'Cookie', Helvetica, sans-serif; text-shadow: 4px 4px 3px rgba(0,0,0,0.1); ">Made With &nbsp;<i style="color:red;" class="fas fa-heart" aria-hidden="true"></i>&nbsp;by&nbsp;<a style="text-decoration: underline; font-family: 400 130px/0.8 'Cookie', Helvetica, sans-serif; text-shadow: 4px 4px 3px rgba(0,0,0,0.1);" target="_blank" href="https://www.linkedin.com/in/swati-jha-97586714b/" >SANDHAAN TEAM</a></div> 
+  
+  
+						
+						
+						<a href="https://goo.gl/maps/jQS3q6WifdaEeDtT8">	<i class="fas fa-map-marked-alt" style="font-size: 30px; margin-left: 142px;">&nbsp;</i> </a><br>
+							<!--<img src="img/footer-logo.png" alt="">-->
+							<a style="text-align: left;" href="mailto:sandhaan2020@gmail.com">	<i class="fa fa-envelope fa-lg" style="color: white; margin-left: 0; font-size: 6%;" >&nbsp;sandhaan2020@gmail.com</i> </a><br><div class="copyright" style="text-align: left; margin-left: 80px;"> powered by <a style="color: #FCFF33;" target="_blank" href="https://www.milesweb.in">Milesweb</a></div>
+					<!--social links-->	
+				<!--	<h4 class="_14">Follow us on</h4>
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/sandhaan.bit/" class="social-icon"> <i class="fas fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/modelclubbit?igshid=osuubs57bnm0" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        
+        <li><a href="https://www.youtube.com/channel/UC6T8EWpW1HBGSLL7_UyjHhw" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/modelclubbitsindri" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        
+    </ul>-->
+	<!--end social links-->	
+	<br>
+						</div></div>
+						
+  
+	
+  
+
+				
+				
+				
+				
+					
+				</div>
+					
+				
+				
+				
+
+			</div>
+				</section>
+			</section>
+			
+			
+		</main>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<script type="text/javascript" src="vendors.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="anime.min.js"></script>
+		<script>
+		
+		//login
+		firebase.auth().onAuthStateChanged(function(user){
+		if(user){
+		
+			var userID= firebase.auth().currentUser.uid;
+			firebase.database().ref('users/' + userID).once('value').then(function(snapshot){
+			
+				if(snapshot.val()){
+					alert('you are already registered for the events, update the details here');
+					var obj=snapshot.val();
+					//console.log(obj);
+					//value in form
+					
+					document.getElementById("name").value=obj.name;
+					document.getElementById("branch").value=obj.branch;
+					document.getElementById("roll").value=obj.roll;
+					document.getElementById("mobile").value=obj.mobile;
+					document.getElementById("hostel").value=obj.hostel;
+					document.getElementById("email").value=obj.email;
+				  
+					if(obj.engineer==="yes"){
+						document.getElementById("engineer").checked=true;
+					}
+				    
+					if(obj.toy==="yes"){
+						document.getElementById("toy").checked=true;
+					}
+				    
+					if(obj.deadoralive==="yes"){
+						document.getElementById("deadoralive").checked=true;
+					}
+				    
+					if(obj.carrombot==="yes"){
+						document.getElementById("carrombot").checked=true;
+					}
+					if(obj.kurukshetra==="yes"){
+						document.getElementById("kurukshetra").checked=true;
+					}
+					if(obj.roboseguidor==="yes"){
+						document.getElementById("roboseguidor").checked=true;
+					}
+					if(obj.mazecorredor==="yes"){
+						document.getElementById("mazecorredor").checked=true;
+					}
+					if(obj.expositio==="yes"){
+						document.getElementById("expositio").checked=true;
+					}
+					if(obj.ceo==="yes"){
+						document.getElementById("ceo").checked=true;
+					}
+					if(obj.scientica==="yes"){
+						document.getElementById("scientica").checked=true;
+					}
+					if(obj.modex==="yes"){
+						document.getElementById("modex").checked=true;
+					}
+				    if(obj.bikeassembling==="yes"){
+						document.getElementById("bikeassembling").checked=true;
+					}
+					if(obj.davincicode==="yes"){
+						document.getElementById("davincicode").checked=true;
+					}
+					if(obj.t2b==="yes"){
+						document.getElementById("t2b").checked=true;
+					}
+					if(obj.aavishkar==="yes"){
+						document.getElementById("aavishkar").checked=true;
+					}
+					if(obj.hydro==="yes"){
+						document.getElementById("hydro").checked=true;
+					}
+					if(obj.matlab==="yes"){
+						document.getElementById("matlab").checked=true;
+					}
+					if(obj.shoot==="yes"){
+						document.getElementById("shoot").checked=true;
+					}
+								
+					
+					
+					//end value in form
+				}
+				else{
+				
+					
+				}
+			
+			});
+			
+			
+			
+		    
+		}
+		else{
+			window.alert('You are not logged in');
+			location.href="../signin/index.html";
+		}
+		});
+		
+		//end login
+		
+		//coming soon alert
+		function coming(){
+		
+		alert('COMING SOON');
+		
+		}
+		//end coming soon alert
+		
+			window.onload = function() {
+				setTimeout( function() {
+					document.querySelector(".loading").style.opacity = 0;
+				}, 800)
+				setTimeout( function() {
+					document.querySelector(".loading").style.display = "none";
+				}, 1300)
+			}
+			
+			// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+		</script>
+		
+	</body>
+	
+	
+<!-- Mirrored from tathva.org/contact/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Oct 2019 18:13:46 GMT -->
+</html>

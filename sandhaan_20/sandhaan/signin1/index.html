@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from tathva.org/contact/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Oct 2019 18:13:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SignIN/SignUp</title>
+	<meta name="description"
+	content="Tathva, the three day fiesta, attracts tech-wits and creative minds from over 900 colleges across the nation, flowing in to test their capabilities and have an enthralling and fruitful time." />
+	<meta name="keywords" content="tathva, nit calicut, 2019, techfest" />
+	<link rel="icon" type="image/x-icon" href="../img/logo.png">
+	
+	
+	<link href="index.css" rel="stylesheet">
+	<link href="slider.css" rel="stylesheet">
+	<link href="contacts.css" rel="stylesheet">
+	<link href="loading.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="../../daneden.github.io/animate.css/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	
+    
+	 <!--database--> 
+   
+   <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+
+   
+   <!--database-->
+   
+</head>
+
+<body>
+	<div class="loading">
+		<img src="../img/loading6_animated%20(1).svg" />
+	</div>
+	<main>
+		<div class="frame">
+			<header class="header">
+				<!-- <div class="model">
+        <a href="../index.html"><img style="width: 15vw; max-width: 100px; margin: 1rem;" src="../about/photos/logo.png"></img></a>
+        </div>-->
+				
+				<div class="menu-btn">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			
+			</header>
+			<nav class="nav" id="mynav" style="display: flex;">
+      
+     
+      <a style="display: flex;" href="../index.html">Home</a>
+       <a style="display: flex;" href="../events/index.html">Segments</a>
+      <a style="display: flex;" href="../gallery/index.html">Archives</a>
+       
+      <a style="display: flex;" href="../CA/index.html">Campus Ambassador</a>
+	  <a style="display: flex;" href="../sponsors/index.html">Sponsors</a>
+	  <a style="display: flex;" href="../contact/index.html">Our Team</a>
+	 
+    </nav>
+			
+		</div>
+		
+		
+		<!--CONTACT SECTION-->
+		<section class="login-wrap">
+        <div class="main_w3agile">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+            <label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up">
+            <label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+                <!-- signin form -->
+                <div class="signin_wthree">
+                    <form method="post">
+                        <div class="group">
+                            <label for="email" class="label">Email Address</label>
+                            <input id="email" type="text" class="input" required>
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" type="password" required>
+                        </div>
+                        
+                        <div class="group">
+                            <input type="button" id="btn-login" class="button" value="Sign In">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <h2><a href="#">Forgot Password?</a></h2>
+                        </div>
+                    </form>
+                </div>
+                <!-- //signin form -->
+                <!-- signup form -->
+                <div class="signup_wthree">
+                    <form method="post" action="#">
+                         <div class="group">
+                            <label for="email" class="label">Email Address</label>
+                            <input id="email" type="email" class="input" required>
+                        </div>
+                        <div class="group">
+                            <label for="password" class="label">Password</label>
+                            <input id="password" type="password" class="input" type="password" required>
+                        </div>
+                        <div class="group">
+                            <label for="cpassword" class="label">Re-Enter Password</label>
+                            <input id="cpassword" type="password" class="input" type="password" required>
+                        </div>
+                       
+                        <div class="group">
+                            <input type="button" id="btn-signup" class="button" value="Sign Up">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <label for="tab-1">Already Member? </label>
+                        </div>
+                    </form>
+                </div>
+                <!-- //signup form -->
+            </div>
+        </div>
+    </section>
+			
+			
+		</main>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<script type="text/javascript" src="vendors.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="anime.min.js"></script>
+		<script>
+		
+		firebase.auth().onAuthStateChanged(function(user){
+		if(user){
+		
+			alert('you are logged in');
+			location.href="../register/index.html"
+			
+			
+			
+		    
+		}
+		
+		});
+		
+		
+			window.onload = function() {
+				setTimeout( function() {
+					document.querySelector(".loading").style.opacity = 0;
+				}, 800)
+				setTimeout( function() {
+					document.querySelector(".loading").style.display = "none";
+				}, 1300)
+			}
+			
+			// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+		</script>
+		
+	</body>
+	
+	
+<!-- Mirrored from tathva.org/contact/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Oct 2019 18:13:46 GMT -->
+</html>

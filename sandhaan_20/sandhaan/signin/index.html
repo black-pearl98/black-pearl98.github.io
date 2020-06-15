@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SignIn</title>
+	<meta name="description"
+	content="SANDHAAN, the annual techno management festival of BIT Sindri. Ever since its inception SANDHAAN has endeavored to live and promote innovation and technical prowess. Over last ten years, it has been a platform for young technocrats of India to showcase and sharpen their skills and prove their talents." />
+	<meta name="keywords" content="model club, BIT SINDRI" />
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+	
+	<link href="index.css" rel="stylesheet">
+	<link href="slider.css" rel="stylesheet">
+	<link href="contacts.css" rel="stylesheet">
+	<link href="loading.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="../../daneden.github.io/animate.css/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	
+  <!-- css -->
+<link href="css/style.css" rel="stylesheet" type='text/css' media="all" />
+<!-- /css -->
+<!-- js --> 
+	
+	
+	 <!--database--> 
+   
+   <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+
+   
+   <!--database-->
+</head>
+
+<body>
+	<div class="loading">
+		<img src="../img/modelclubnew.png" />
+	</div>
+	<main>
+		<div class="frame">
+			<header class="header">
+				<!-- <div class="model">
+        <a href="../index.html"><img style="width: 15vw; max-width: 100px; margin: 1rem;" src="../about/photos/logo.png"></img></a>
+        </div>-->
+				
+				<div class="menu-btn">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			<img src="../img/bit.png" alt="Nature" class="logobit">
+		<img src="../img/modelclubnew.png" alt="Nature" class="logo">
+			</header>
+			<nav class="nav" id="mynav" style="display: flex;">
+      
+     <a style="display: flex;" href="../index.html">Home</a>
+      
+       <a style="display: flex;" href="../events/index.html">Segments</a>
+      <a style="display: flex;" href="../gallery/index.html">Archives</a>
+       
+      
+	  <a style="display: flex;" href="../sponsors/index.html">Sponsors</a>
+	  <a style="display: flex;" href="../contact/index.html">Our Team</a>
+	 
+    </nav>
+			
+		</div>
+		
+		
+		<!--CONTACT SECTION-->
+		<section class="login-wrap">
+        <div class="main_w3agile">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+            <label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up">
+            <label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+                <!-- signin form -->
+                <div class="signin_wthree">
+                    <form method="post">
+                        <div class="group">
+                            <label for="email" class="label">Email Address</label>
+                            <input id="email" type="text" class="input" required>
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" type="password" required>
+                        </div>
+                        
+                        <div class="group">
+                            <input type="button" id="btn-login" class="button" value="Sign In">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <h2><a href="#">Forgot Password?</a></h2>
+                        </div>
+                    </form>
+                </div>
+                <!-- //signin form -->
+                <!-- signup form -->
+                <div class="signup_wthree">
+                    <form method="post" action="#">
+                         <div class="group">
+                            <label for="email" class="label">Email Address</label>
+                            <input id="emailid" type="email" class="input" required>
+                        </div>
+                        <div class="group">
+                            <label for="password" class="label">Password</label>
+                            <input id="password" type="password" class="input" type="password" required>
+                        </div>
+                        <div class="group">
+                            <label for="cpassword" class="label">Re-Enter Password</label>
+                            <input id="cpassword" type="password" class="input" type="password" required>
+                        </div>
+                       
+                        <div class="group">
+                            <input type="button" id="btn-signup" class="button" value="Sign Up">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <label for="tab-1">Already Member? </label>
+                        </div>
+                    </form>
+                </div>
+                <!-- //signup form -->
+            </div>
+        </div>
+    </section>
+						
+			<!-- /cards -->
+			<div class="contact-card">
+			
+			
+	
+	<div class="footer-social-icons">
+	
+				
+				
+  <div class="column-center"><div class="footer-single">
+  <div class="copyright" style="text-align: left; margin-left: 80px;">&copy; MODEL CLUB, BIT SINDRI</div>
+  <div id="myname"  style="text-align: left;   font-family: 400 130px/0.8 'Cookie', Helvetica, sans-serif; text-shadow: 4px 4px 3px rgba(0,0,0,0.1); ">Made With &nbsp;<i style="color:red;" class="fas fa-heart" aria-hidden="true"></i>&nbsp;by&nbsp;<a style="text-decoration: underline; font-family: 400 130px/0.8 'Cookie', Helvetica, sans-serif; text-shadow: 4px 4px 3px rgba(0,0,0,0.1);" target="_blank" href="https://www.linkedin.com/in/swati-jha-97586714b/" >SANDHAAN TEAM</a></div> 
+  
+  
+						
+						
+						<a href="https://goo.gl/maps/jQS3q6WifdaEeDtT8">	<i class="fas fa-map-marked-alt" style="font-size: 30px; margin-left: 142px;">&nbsp;</i> </a><br>
+							<!--<img src="img/footer-logo.png" alt="">-->
+							<a style="text-align: left;" href="mailto:sandhaan2020@gmail.com">	<i class="fa fa-envelope fa-lg" style="color: white; margin-left: 0; font-size: 6%;" >&nbsp;sandhaan2020@gmail.com</i> </a><br><div class="copyright" style="text-align: left; margin-left: 80px;"> powered by <a style="color: #FCFF33;" target="_blank" href="https://www.milesweb.in">Milesweb</a></div>
+					<!--social links-->	
+				<!--	<h4 class="_14">Follow us on</h4>
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/sandhaan.bit/" class="social-icon"> <i class="fas fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/modelclubbit?igshid=osuubs57bnm0" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        
+        <li><a href="https://www.youtube.com/channel/UC6T8EWpW1HBGSLL7_UyjHhw" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/modelclubbitsindri" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        
+    </ul>-->
+	<!--end social links-->	
+	<br>
+						</div></div>
+						
+  
+	
+  
+
+				
+				
+				
+				
+					
+				</div>
+					
+				
+				
+				
+
+			</div>
+				</section>
+			</section>
+			
+			
+		</main>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<script type="text/javascript" src="vendors.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="anime.min.js"></script>
+		<script>
+		
+		//login
+		firebase.auth().onAuthStateChanged(function(user){
+		if(user){
+		
+			alert('you are logged in');
+			location.href="../register/index.html"
+			
+			
+			
+		    
+		}
+		
+		});
+		
+		
+		//end login
+		
+		//coming soon alert
+		function coming(){
+		
+		alert('COMING SOON');
+		
+		}
+		//end coming soon alert
+		
+			window.onload = function() {
+				setTimeout( function() {
+					document.querySelector(".loading").style.opacity = 0;
+				}, 800)
+				setTimeout( function() {
+					document.querySelector(".loading").style.display = "none";
+				}, 1300)
+			}
+			
+			// Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+		</script>
+		
+	</body>
+	
+	
+<!-- Mirrored from tathva.org/contact/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Oct 2019 18:13:46 GMT -->
+</html>
